@@ -7,14 +7,14 @@ devtools::install_github("REditorSupport/languageserver")
 
 
 devtools::install_github("tidyverse/tidyverse")
-fatal <- 
+essentials <- 
     c(
-        "irtoys", "ltm", "Rcpp", "rstan", "psych", "magrittr", "mirt", "sirt", "pracma", "plink",
+        "irtoys", "ltm", "Rcpp", "psych", "magrittr", "mirt", "sirt", "pracma", "plink",
         "EstCRM", "equate", "GPArotation", "haven", "Hmisc", "latex2exp", "Deriv", 
         "openxlsx", "lavaan", "blavaan", "lme4"
     )
 
-install.packages(fatal)
+install.packages(essentials)
 
 
 # jupyter notebook
