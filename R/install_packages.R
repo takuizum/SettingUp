@@ -1,3 +1,7 @@
+# Version check
+sessionInfo()
+
+# install devtools and language server for VScode/
 install.packages("xml2") # reccomend install from source if it could be done.
 install.packages("devtools")
 # devtools::install_github("rlib/xml2")
@@ -49,6 +53,8 @@ schools_dat <- list(
 )
 mod <- stan_model("src/8schools.stan")
 fit <- stan(file = "src/8schools.stan", data = schools_dat)
+
 # shinystan
+install.packages("shinystan")
 library(shinystan)
 launch_shinystan(fit)
